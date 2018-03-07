@@ -1,13 +1,13 @@
 # JavaWZastosowaniachProdukcyjnych
 
-###Part 1
+### Part 1
 
 To build a fat-jar run:
 ```
 gradle task customFatJar -Pprofile=not
 ```
 
-###Part 2
+### Part 2
 
 This repository contains different solutions based of given command: 
 
