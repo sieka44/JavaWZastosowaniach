@@ -1,3 +1,4 @@
+import groovy.transform.Field
 import org.apache.tools.ant.filters.ReplaceTokens
 
 group 'Zadanie1'
@@ -16,6 +17,8 @@ dependencies {
 }
 
 processResources {
+    if(!project.hasProperty('profile')) ext.setProperty('profile','not')
+
         filter(ReplaceTokens, tokens: [
                 "db.driverClass" : (profile == "dev") ? "DevClass" : "NotDevClass",
                 "db.connectionURL" : (profile == "dev") ? "Dev.com" : "NotDev.com",

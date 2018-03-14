@@ -4,7 +4,7 @@
 
 To build a fat-jar run:
 ```
-gradle task customFatJar -Pprofile=not
+gradle task customFatJar
 ```
 
 ### Part 2
