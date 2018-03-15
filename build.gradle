@@ -1,10 +1,22 @@
-import groovy.transform.Field
 import org.apache.tools.ant.filters.ReplaceTokens
 
 group 'Zadanie1'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            artifact customFatJar {
+                classifier "sources"
+            }
+        }
+    }
+}
 
 sourceCompatibility = 1.8
 
