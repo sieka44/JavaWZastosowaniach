@@ -13,12 +13,12 @@ This repository contains different solutions based of given command:
 
 Run:
 ```
-gradle clean* build -Pprofile=dev
+gradle clean build -Pprofile=dev
 ```
 or
 
 ```
-gradle clean* build -Pprofile=anythingElse
+gradle clean build -Pprofile=anythingElse
 ```
 *For better results run ***gradle clean***,before every build.
 
